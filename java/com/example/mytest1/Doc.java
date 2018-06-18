@@ -1,6 +1,6 @@
 package com.example.mytest1;
 
-public class Doc {
+public class Doc { //我是小多多，我正在改严屌的项目
     private String userName;
     private String hospitalName;
     private int hospitalId;
