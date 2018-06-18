@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center">
+        <include layout="@layout/head"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:stretchColumns="0,1,2">
+
+            <TableRow>
+
+                <ImageView android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/doc"
+                    android:gravity="center"
+                    android:id="@+id/image1"
+                    android:background="@drawable/textstyle"/>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:src="@drawable/data"
+                    android:id="@+id/image2"
+                    android:background="@drawable/textstyle"
+                    />
+            </TableRow>
+
+            <TableRow>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:src="@drawable/paper"
+                    android:id="@+id/image3"
+                    android:background="@drawable/textstyle"
+                     />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:src="@drawable/haski"
+                    android:id="@+id/image4"
+                    android:background="@drawable/textstyle"
+                    />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:gravity="center">
+        <include layout="@layout/middle"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center">
+        <include layout="@layout/bottom"/>
+    </LinearLayout>
+</LinearLayout>
